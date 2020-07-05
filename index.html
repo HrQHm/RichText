@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <title>Richt Text Editor</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <script src="https://kit.fontawesome.com/540f094941.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--<h2>ART - Awsome Rich Text</h2>-->
+    <div class="content">
+        <div class="toolbar" id="toolbar">
+            <a href="javascript:void(0)" onclick="format('bold')" id="bold"><span class="fas fa-bold"></span></a>
+            <a href="javascript:void(0)" onclick="format('italic')" id="italic"><span class="fas fa-italic"></span></a>
+            <a href="javascript:void(0)" onclick="format('underline')" id="underline"><span class="fas fa-underline"></span></a>
+            <a href="javascript:void(0)" onclick="format('link')" id="link"><span class="fas fa-link"></span></a>
+            <a href="javascript:void(0)" onclick="format('insertunorderedlist')" id="list"><span class="fas fa-list-ul"></span></a>
+            <a href="javascript:void(0)" onclick="undo()" id="undo"><span class="fas fa-undo"></span></a>
+            <a href="javascript:void(0)" onclick="redo()" id="redo"><span class="fas fa-redo"></span></a>
+        </div>
+        <div class="editor" id="sampleeditor" onkeydown="saveText(event)">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
